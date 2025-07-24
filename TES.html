@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TES Portfolio Sections</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Montserrat font: weights 400, 700, 900 for flexibility -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900;700;400&display=swap" rel="stylesheet">
+  <!-- Main site-wide stylesheet -->
+  <link rel="stylesheet" href="tes.css">
+</head>
+<body>
+  <div id="smooth-wrapper">
+    <!-- ===============================
+         Sticky Bottom Navigation Bar
+         =============================== -->
+    <div class="navbar-wrap">
+      <nav class="navbar">
+        <!-- Navigation links: update or rearrange as needed -->
+        <button class="nav-link active" data-link="intro" onclick="scrollToSection('intro')">Intro</button>
+        <button class="nav-link" data-link="about-us" onclick="scrollToSection('about-us')">About Us</button>
+        <button class="nav-link" data-link="Zynga" onclick="scrollToSection('Zynga')">Zynga</button>
+        <button class="nav-link" data-link="showcase" onclick="scrollToSection('showcase')">Showcase</button>
+        <button class="nav-link" data-link="works" onclick="scrollToSection('works')">Works</button>
+        <button class="nav-link" data-link="value" onclick="scrollToSection('value')">Value</button>
+        <button class="nav-link" data-link="collaboration" onclick="scrollToSection('collaboration')">Collaboration</button>
+        <button class="nav-link" data-link="contact" onclick="scrollToSection('contact')">Contact</button>
+      </nav>
+       <div class="icon-scroll"></div>
+
+    </div>
+
+    <!-- ===============================
+         Main Smooth Scroll Content Area
+         =============================== -->
+    <div id="smooth-content">
+
+
+      <!-- ==== 1. HOME SECTION ==== -->
+      <section class="section entity-intro" id="intro">
+        <div class="home-section-bg"></div>
+        <div class="entity-content" style="text-align:center;">
+          <div class="section-content" style="flex-direction:column;text-align:center;">
+            <div class="card-banner" style="pointer-events:none;">
+              <!-- TES Main Logo -->
+                <div class="intro-video-placeholder">
+                  <video 
+                    src="Assets/Videos/Text_Animation_01.mp4" 
+                    autoplay 
+                    muted 
+                    loop 
+                    playsinline 
+                    preload="auto" 
+                    style="width: 100%; height: auto; object-fit: contain; border-radius: 8px;">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+            </div>
+          </div>
+          <div class="entity-sub">
+            is our studio and we are a fusion of<br>
+            <span class="entity-link">creativity and collaboration</span>
+          </div>
+          <div class="entity-divider"></div>
+          <div class="entity-caption">
+            From conceptualization to final delivery, we always maintain the highest standards of quality.
+          </div>
+          <!-- Tool Icons Row -->
+          <div class="entity-tools-row">
+            <img src="Assets/Icons/icon (1).png" alt="Maya" class="entity-tool-icon">
+            <img src="Assets/Icons/icon (2).png" alt="Unreal" class="entity-tool-icon">
+            <img src="Assets/Icons/icon (3).png" alt="Adobe" class="entity-tool-icon">
+            <img src="Assets/Icons/icon (4).png" alt="Blender" class="entity-tool-icon">
+            <img src="Assets/Icons/icon (5).png" alt="Mobu" class="entity-tool-icon">
+            <img src="Assets/Icons/icon (6).png" alt="Unreal" class="entity-tool-icon">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ==== 2. ABOUT US SECTION ==== -->
+          <section class="section about-section" id="about-us">
+            <!-- Background image -->
+            <div class="about-bg">
+              <img src="Assets/Images/bg2.webp" alt="About Us Background">
+            </div>
+
+            <!-- Content wrapper -->
+            <div class="about-container">
+              <div class="about-content">
+
+                <!-- Main Heading -->
+                <h2 class="about-heading reveal-text">About Us</h2>
+
+                <!-- Divider Line -->
+                <div class="about-divider"></div>
+
+                <!-- Content left or center -->
+                <div class="about-description">
+                  <p>
+                    <strong>The Entity Studios</strong> is a global animation partner founded in 2024 by a team of AAA veterans with deep experience across gameplay, cinematics, and stylized pipelines.
+                  </p>
+                  <p>
+                    Our artists have contributed to industry-defining titles like <span class="highlight">GTA V</span>, <span class="highlight">Red Dead Redemption II</span>, and <span class="highlight">Ghost Recon Breakpoint</span>. Now we bring that same level of craft and care to collaborations across all genres and platforms.
+                  </p>
+                  <p>
+                    We specialize in high-quality character animation, rigging, and motion capture services. Whether it's for social games, cinematic storytelling, or mobile-first experiences — our work blends <span class="highlight">performance with polish</span> to deliver animation that feels responsive, expressive, and production-ready.
+                  </p>
+
+                  <p>
+                    Built by animators for animation, our studio culture prioritizes <span class="highlight">creative ownership</span>, technical excellence, and collaborative energy. We don’t just deliver animation — we plug directly into your pipeline and help bring your characters to life.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+            
+          </section>
+
+
+      <!-- ==== 3. ZYNGA COLLABORATION SECTION ==== -->
+<section class="zynga-section" id="Zynga">
+
+  <!-- Background Video: Positioned absolutely via CSS -->
+  <video 
+    class="zynga-bg-video"
+    src="Assets/Videos/BG_Loop.mp4"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="Assets/Images/zynga-video-poster.webp"
+  ></video>
+
+  <!-- Foreground Content: Positioned relatively and sits on top -->
+  <div class="zynga-content">
+
+    <!-- Brand Row -->
+    <div class="logo-row" aria-label="Company and partner logos">
+      <div class="banner-placeholder">
+        <img src="/Assets/Images/TES-logo.png" alt="The Entity Studios logo">
+      </div>
+      <div class="banner-placeholder banner-text">
+        <h4 style="font-weight: 200;" >for</h4>
+      </div>
+      <div class="banner-placeholder">
+        <img src="/Assets/Images/zynga-logo.png" alt="Zynga logo">
+      </div>
+    </div>
+
+    <!-- Showcase Title -->
+    <div class="showcase-title reveal-text">
+      Curated Projects Aligned with ZYNGA’s Style
+    </div>
+
+    <!-- Showcase Description -->
+    <div class="showcase-description reveal-text">
+      <p class="lead">
+        Our handpicked project selection highlights our experience in <strong>vibrant, expressive animation</strong> and <strong>gameplay-focused design</strong>—all in step with the creative direction we admire in Zynga’s work.
+      </p>
+      <p>
+        Each piece exemplifies a key aspect of Zynga’s style and fast-paced gameplay, from <strong>loopable animations</strong> and <strong>precision character rigs</strong> to <strong>UI-centric motion</strong> and <strong>interaction polish</strong>.
+      </p>
+      <p>
+        <span class="highlight">
+          This showcase demonstrates not only what we’ve achieved—<strong>it’s a statement of how we can deliver quality and responsiveness to elevate Zynga’s worlds even further.</strong>
+        </span>
+      </p>
+<div class="note-text">
+    <span class="note-icon" aria-hidden="true">!</span>
+    While The Entity Studios is newly established, our team brings decades of hands-on experience. The work shown here reflects our artists’ past collaborations with renowned studios, encapsulating the quality, reliability, and expertise we now offer as your creative partner.
+  </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ==== 5. PROJECTS SHOWCASE (Static Card Side-by-Side) ==== -->
+
+<!-- My Talking Hank -->
+<section class="section" id="showcase">
+  <div class="section-bg">
+    <img src="Assets/Images/My2-1.avif" alt="My Talking Hank Background">
+  </div>
+  <div class="section-content project-showcase">
+    <!-- LEFT: Text Card -->
+    <div class="card card-text">
+      <div class="card-head-text">My Talking Hank</div>
+      <div style="margin-top: 16px; font-weight: 300;">
+        We’re proud to present <strong>My Talking Hank</strong> — a fun and heartwarming virtual pet game we created with love and attention to detail.
+        Join Hank on his island adventure, care for him, and help him photograph wild animals in a vibrant world full of surprises!
+      </div>
+      <button class="animated-btn play-now-btn" data-video="Assets/Videos/My Talking Han.mp4">
+        <span>▶ Play Now</span>
+      </button>
+    </div>
+
+    <!-- RIGHT: Project Image -->
+    <div class="card card-banner">
+      <div class="project-placeholder">
+        <img src="Assets/Images/My-1.avif" alt="My Talking Hank Project Art" class="project-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Angry Birds -->
+<section class="section" id="showcase-angrybirds">
+  <div class="section-bg">
+    <img src="Assets/Images/ab2-2.avif" alt="Angry Birds Background">
+  </div>
+  <div class="section-content project-showcase">
+    <!-- LEFT: Text Card -->
+    <div class="card card-text">
+      <div class="card-head-text">Angry Birds</div>
+      <div style="margin-top: 16px; font-weight: 300;">
+        Experience the classic <strong>Angry Birds</strong> like never before! We contributed to vibrant visual effects,
+        refined level designs, and performance optimizations that deliver endless fun and challenge for millions worldwide.
+      </div>
+      <button class="animated-btn play-now-btn" data-video="Assets/Videos/Angrybirds.mp4">
+        <span>▶ Play Now</span>
+      </button>
+    </div>
+
+    <!-- RIGHT: Project Image -->
+    <div class="card card-banner">
+      <div class="project-placeholder">
+        <img src="Assets/Images/Ab-2.avif" alt="Angry Birds Project Art" class="project-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Byjus – Jax And Jane -->
+<section class="section" id="showcase-byjus">
+  <div class="section-bg">
+    <img src="Assets/Images/jjb.avif" alt="Byjus - Jax And Jane Background">
+  </div>
+  <div class="section-content project-showcase">
+    <!-- LEFT: Text Card -->
+    <div class="card card-text">
+      <div class="card-head-text">Byju’s – Jax And Jane</div>
+      <div style="margin-top: 16px; font-weight: 300;">
+        Supporting <strong>Byju's</strong> educational journey, we contributed to "Jax and Jane" — an engaging edutainment series designed to make learning fun and intuitive through interactive storytelling and dynamic educational content.
+      </div>
+      <button class="animated-btn play-now-btn" data-video="Assets/Videos/Master Time With Jax And Jane  Reading A Clock  BEL - K3 - Math - 1080.mov">
+        <span>▶ Play Now</span>
+      </button>
+    </div>
+
+    <!-- RIGHT: Project Image -->
+    <div class="card card-banner">
+      <div class="project-placeholder">
+        <img src="Assets/Images/jj-4.avif" alt="Byjus - Jax And Jane Project Art" class="project-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Noah’s Ark (2024) -->
+<section class="section" id="showcase-noahsark">
+  <div class="section-bg">
+    <img src="Assets/Images/na2-5.avif" alt="Noah's Ark 2024 Background">
+  </div>
+  <div class="section-content project-showcase">
+    <!-- LEFT: Text Card -->
+    <div class="card card-text">
+      <div class="card-head-text">Noah’s Ark (2024)</div>
+      <div style="margin-top: 16px; font-weight: 300;">
+        For the ambitious animated film <strong>Noah’s Ark (2024)</strong>, our team contributed to character rigging, immersive environment creation,
+        and stunning visual effects, helping bring this timeless story to life for global audiences.
+      </div>
+      <button class="animated-btn play-now-btn" data-video="Assets/Videos/Noahs Ark (2024).mp4">
+        <span>▶ Play Now</span>
+      </button>
+    </div>
+
+    <!-- RIGHT: Project Image -->
+    <div class="card card-banner">
+      <div class="project-placeholder">
+        <img src="Assets/Images/na-5.avif" alt="Noah's Ark Project Art" class="project-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Avakin Life -->
+<section class="section" id="showcase-avakinlife">
+  <div class="section-bg">
+    <img src="Assets/Images/Al2-2.avif" alt="Avakin Life Background">
+  </div>
+  <div class="section-content project-showcase">
+    <!-- LEFT: Text Card -->
+    <div class="card card-text">
+      <div class="card-head-text">Avakin Life</div>
+      <div style="margin-top: 16px; font-weight: 300;">
+        Dive into the immersive <strong>Avakin Life</strong> 3D virtual world! Our work enhanced lifelike avatars, interactive social spaces,
+        and a wide range of customization options, empowering users to create and connect in style.
+      </div>
+      <button class="animated-btn play-now-btn" data-video="Assets/Videos/Avakin Life.mp4">
+        <span>▶ Play Now</span>
+      </button>
+    </div>
+
+    <!-- RIGHT: Project Image -->
+    <div class="card card-banner">
+      <div class="project-placeholder">
+        <img src="Assets/Images/Al-3.avif" alt="Avakin Life Project Art" class="project-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- ==== 6. ADDITIONAL WORKS ==== -->
+<section class="entity-additional-works" id="works">
+  <div class="entity-works-bg">
+    <img src="Assets/Images/bg3.webp" alt="Additional Works Section Background" />
+  </div>
+
+  <div class="entity-works-content">
+    <!-- Left: Content Card (60%) -->
+    <div class="entity-works-card reveal-text">
+      <div class="entity-works-header">Additional Works</div>
+      <div class="entity-works-sub">More Work. More Style. More Possibilities.</div>
+      <div class="entity-works-desc">
+        <p>
+          What you’ve seen here is a focused slice of what our team can do.<br>
+          For a broader look at our work—across different styles, genres, and production setups—we invite you to explore our main portfolio site.
+        </p>
+        <p>
+          <span style="color:#36b6ff;font-weight:600;">
+            We regularly update it with in-progress reels, stylized experiments, and production-ready animations from our core team:
+          </span>
+          <br>
+          <a href="https://www.the-entity.studio/" target="_blank" style="color:#ffe77a;font-weight:700;font-size:1.17em;">
+            www.the-entity.studio
+          </a>
+        </p>
+        <p>
+          Take your time, and if anything catches your eye, we’d be happy to walk you through the creative or technical process behind it.
+        </p>
+        <div class="entity-works-note">
+          <span>Note:</span> Some works on our site may be protected or under NDA.<br>
+          Please reach out directly if you'd like to view something in more detail.
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Two stacked images (40%) -->
+    <div class="entity-works-visual">
+      <div class="works-image-placeholder">
+        <img src="Assets/Images/bg-angry.webp" alt="Work Image 1" class="works-img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Value -->
+<section class="entity-value-section" id="value">
+  <!-- Background image, visually positioned behind the content with CSS -->
+  <div class="section-bg">
+    <img src="Assets/Images/bg-angry.webp" alt="Projects Background">
+  </div>
+
+  <h2 class="entity-value-heading reveal-text">Where We Add Value</h2>
+  <div class="entity-value-grid">
+    <!-- Card 1: Art Styles -->
+    <div class="entity-value-card">
+      <img src="Assets/Icons/art.svg" 
+           alt="Art Styles Icon" 
+           class="entity-value-icon-img" 
+           loading="lazy" />
+      <div class="entity-value-title">Art Styles <br> We Deliver</div>
+      <ul class="entity-value-list">
+        <li>3D Animation</li>
+        <li>2D Animation</li>
+        <li>2.5D Animation</li>
+      </ul>
+    </div>
+    <!-- Card 2: Rigging -->
+    <div class="entity-value-card">
+      <img src="Assets/Icons/monitor.svg" 
+           alt="Rigging Icon" 
+           class="entity-value-icon-img"
+           loading="lazy" />
+      <div class="entity-value-title">Production-Ready Rigging</div>
+      <ul class="entity-value-list">
+        <li>Lightweight rigs for Unity workflows</li>
+        <li>Blendshape support for facial/UI</li>
+        <li>Clean mocap data for cinematics</li>
+      </ul>
+    </div>
+    <!-- Card 3: Security/Compliance -->
+    <div class="entity-value-card">
+      <img src="Assets/Icons/secure.svg" 
+           alt="Security Icon"
+           class="entity-value-icon-img"
+           loading="lazy" />
+      <div class="entity-value-title">Secure by Design</div>
+      <ul class="entity-value-list">
+        <li>ISO/IEC 27001:2022 &amp; TPN Compliant</li>
+        <li>Perforce-based version control</li>
+        <li>Internet-disabled production</li>
+      </ul>
+    </div>
+    <!-- Card 4: Tool Proficiency (Wide card) -->
+    <div class="entity-value-card value-card-table">
+      <img src="Assets/Icons/tools.svg" 
+           alt="Tools Icon"
+           class="entity-value-icon-img"
+           loading="lazy" />
+      <div class="entity-value-title">Tool Proficiency</div>
+      <table class="entity-value-table">
+        <tr><th>Category</th><th>Tools</th></tr>
+        <tr><td>3D &amp; Rigging</td><td>Maya, Blender, MotionBuilder</td></tr>
+        <tr><td>2D &amp; Comp</td><td>After Effects, Photoshop</td></tr>
+        <tr><td>Game Engines</td><td>Unity, Unreal</td></tr>
+        <tr><td>Pipeline &amp; Support</td><td>Perforce, ShotGrid, Jira, Git</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+      <!-- ==== 8. COLLABORATION MODEL ==== -->
+<section class="collaboration-model" id="collaboration">
+  <!-- Background image stays -->
+  <div class="collab-bg">
+    <img src="Assets/Images/bg-angry.webp" alt="Collaboration Background">
+  </div>
+
+  <div class="collab-container">
+    <h2 class="collab-title">Our Collaboration Model</h2>
+
+    <!-- Grid for top two cards -->
+    <div class="collab-grid">
+      <!-- Card 1 -->
+      <div class="collab-card">
+        <h3 class="collab-heading">Flexible Engagement Models</h3>
+        <ul class="collab-list">
+          <li>Scalable team structure with <span class="highlight">Lead</span>, <span class="highlight">Artists</span>, and <span class="highlight">Producer</span></li>
+          <li>Fast onboarding, easy task handoff, and clear review cycles</li>
+          <li>Suitable for overflow, seasonal live ops, or long-term support</li>
+        </ul>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="collab-card">
+        <h3 class="collab-heading">How We Work with Production Teams</h3>
+        <ul class="collab-list">
+          <li>Dedicated pods with <span class="highlight">Producer + Lead Animator + Artists</span></li>
+          <li>Weekly/Daily check-ins to align milestones</li>
+          <li>Perforce-based delivery pipeline if required</li>
+          <li>Feedback-integrated animation cycles tailored to your process</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom: Horizontal expanding mindset block -->
+    <div class="collab-mindset reveal-text">
+      <div class="collab-mindset-inner">
+        <h3 class="collab-heading">Our Mindset</h3>
+        <p>
+          We understand the tempo of live games. Our team thrives in stylized spaces where
+          <span class="highlight">personality</span>, <span class="highlight">polish</span>,
+          and <span class="highlight">responsiveness</span> are key, and we bring that mindset to every collaboration.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+      <!-- ==== 9. CONTACT / THANK YOU ==== -->
+      <section class="section" id="contact">
+        <div class="section-bg" style="opacity:0.2;">
+          <img src="Assets/Images/bg3.webp" alt="Thank You Background">
+        </div>
+        <div class="section-content">
+          <div class="end-text reveal-text" style="text-align:center;">
+            <div style="font-size:1.41rem;color:var(--primary);font-weight:700;margin-bottom:11px;">Contact / Thank You</div>
+            <div style="color:#fff;font-size:1.09rem;">contact@entity.ltd</div>
+            <a href="mailto:contact@entity.ltd" class="cta-link">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<!-- ===============================
+     Password Modal for Secure Content
+     =============================== -->
+<div id="authModal" class="auth-modal">
+  <div class="auth-modal-bg"></div>
+  <div class="auth-modal-box">
+    <h1 class="auth-modal-title">ZYNGA INTERNAL PRESENTATION</h1>
+    <h3 class="auth-modal-sub">Confidential Proposal by The Entity Studios</h3>
+    <div class="auth-modal-divider"></div>
+    <h2 class="auth-modal-heading">Password Required</h2>
+
+    <input type="password" id="authPasswordInput" placeholder="Enter password" autocomplete="off">
+    <button id="authPasswordSubmit">Unlock</button>
+
+    <div class="auth-modal-msg">
+      <p>This page and all its contents have been prepared exclusively for Zynga Inc. and are intended for <span class="auth-modal-strong">internal viewing by Zynga teams only</span>.</p>
+      <p>The material presented here is tailored to Zynga’s game portfolio, animation needs, and studio goals.</p>
+      <p><span class="auth-modal-strong">All animations, designs, and workflows shown within this presentation are under NDA.</span></p>
+      <p class="auth-modal-warning">Please do not share, forward, or redistribute this presentation outside the Zynga organization.</p>
+    </div>
+
+    <div class="auth-modal-feedback" id="authPassInfo"></div>
+  </div>
+</div>
+
+
+
+  <!-- ===============================
+       Lightbox Video Modal
+       =============================== -->
+  <div id="videoLightbox" class="video-lightbox">
+    <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">
+        <svg viewBox="0 0 36 36" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round">
+          <line x1="9" y1="9" x2="27" y2="27"/>
+          <line x1="27" y1="9" x2="9" y2="27"/>
+        </svg>
+      </button>
+      <video id="lightboxVideo" controls autoplay></video>
+    </div>
+  </div>
+
+  <!-- ===============================
+       Animation & Scrolling Scripts
+       =============================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+  <script src="/script.js"></script>
+
+
+
+<a href="https://the-entity.studio/" target="_blank" id="floating-logo">
+  <img src="Assets/Images/TES-logo - Sq.png" alt="Entity Studio Logo" style="width:60px;height:auto;">
+</a>
+
+
+
+
+</body>
+</html>
