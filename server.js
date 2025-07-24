@@ -1,14 +1,14 @@
+require('dotenv').config();
 const express = require('express');
-const cors = require('cors'); // Add this line
+const path = require('path');
 const app = express();
-app.use(cors()); // Add this line
-app.use(express.json());
 
-const PASSWORD = 'tes2025';
-app.get('C:\Users\ldvkv\Downloads\Presentation_02\index.html', (req, res) => {
-  res.send('API is running. Use POST /api/auth for authentication.');
-});
-app.post('/api/auth', (req, res) => { // Fix route path
+const PASSWORD = process.env.ADMIN_PASSWORD;
+
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.post('https://pres-2.onrender.com/api/auth', (req, res) => {
   const { password } = req.body;
   if (password === PASSWORD) {
     res.json({ success: true });
@@ -17,6 +17,11 @@ app.post('/api/auth', (req, res) => { // Fix route path
   }
 });
 
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });

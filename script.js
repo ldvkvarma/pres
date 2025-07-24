@@ -168,7 +168,7 @@ function hideAuthModal() {
 function verifyAuthPassword() {
   const userInput = passwordInput.value.trim();
 
-  fetch('http://localhost:3000/api/auth', {
+  fetch('https://pres-2.onrender.com/api/auth', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ password: userInput })
